@@ -276,27 +276,134 @@
 //  let r = somme(3,6,8,4,2);
 //  console.log(r)
    
- let chiffres = [3,6,8,4,2];
- let addition = 0;
- for(let i =0; i < chiffres.length; i++){
-    addition = addition + chiffres[i];
-}
-console.log(addition);
+//  let chiffres = [3,6,8,4,2];
+//  let addition = 0;
+//  for(let i =0; i < chiffres.length; i++){
+//     addition = addition + chiffres[i];
+// }
+// console.log(addition);
 
 // faire la moyenne
 
-console.log(addition);
-let moyenne = addition /chiffres.length;
-console.log(moyenne);
+// console.log(addition);
+// let moyenne = addition /chiffres.length;
+// console.log(moyenne);
 
-// faire une fonction qui trouve le plus pétit élement d'une liste[2,1,4]
- let liste = [-2,1,4];
-function plusPetit(liste){
-    let petit = liste[0];
-    for(let i = 0; i < liste.length; i = i+1)
-        if(liste[i] < petit){
-            petit = liste[i];
-        }
-    return petit;
+// faire une fonction qui trouve le plus pétit élement d'une liste[-2,1,4]
+//  let liste = [-2,1,4];
+// function plusPetit(liste){
+//     let petit = liste[0];
+//     for(let i = 0; i < liste.length; i = i+1){ 
+//         if(liste[i] < petit){
+//             petit = liste[i];
+//         }
+//      }
+//     return petit;
+// }
+// console.log(plusPetit(liste));
+
+// STOCKER CETTE LISTE (Hello,2,3,Bonjour) DANS UNE VARIABLE
+// let Liste1 = [5, 6, 7,"false"]
+// cas ou on fusionne deux listes à savoir Liste1 dans Liste.
+// let Liste = ["Hello",2,3,"Bonjour",...Liste1];
+
+// console.log(Liste[Liste.length-1]);
+// console.log(Liste.length);
+// console.log(Liste);
+
+// cas ou une liste contient des listes
+// let Liste3 = [2,[[8,1,9]]];
+//  console.log(Liste3[1][0][0]);  //cas ou on veut afficher le 8
+
+//  let Liste4 = [5, 8, 10, 20, 9];
+//  cas ou on affiche chaque element de facon repeter NON CONSEILLE
+//  console.log(Liste4[0]);
+//  console.log(Liste4[1]);
+//  console.log(Liste4[2]);
+//  console.log(Liste4[3]);
+//  console.log(Liste4[4]);
+
+// CAS OU ON UTILISE LA BOUCLE WHILE et FOR pour afficher de 5 à 9
+// let Liste4 = [5, 8, 10, 20, 9];
+// let i = 0;
+// while(i < Liste4.length){
+//     console.log(Liste4[i]);
+//     i = i + 1;
+// }
+
+// for(let x = 0; x < Liste4.length; x = x +1){
+//     console.log(Liste4[x]);
+// }
+
+// CAS OU ON UTILISE LA BOUCLE WHILE et FOR pour afficher de 9 à 5
+
+// let Liste4 = [5, 8, 10, 20, 9];
+// let k = Liste4.length - 1;
+// while(k >= 0){
+//     console.log(Liste4[k]);
+//     k = k - 1;
+// }
+
+// for(let k = Liste4.length - 1; k >= 0; k = k - 1){
+//     console.log(Liste4[k]);
+// }
+
+// Faire +100 à chaque element de Liste4
+
+// let Liste4 = [5, 8, 10, 20, 9];
+//  let i = 0; //0 correspond au debut de la liste
+//  while(i < Liste4.length){
+//      console.log(Liste4[i] + 100);
+//      i = i + 1;
+//  }
+
+//  for(let x = 0; x < Liste4.length; x = x +1){
+//      console.log(Liste4[x] + 100);
+//  }
+
+// Autre methode Prof
+// let Liste4 = [5, 8, 10, 20, 9];
+// let j = 0;
+// while(j < Liste4.length){
+//     Liste4[j] = Liste4[j] + 100;
+//     j = j + 1;
+// }
+// console.log(Liste4);
+
+// Remplacez chaque element de Liste4 par 0
+
+// let Liste4 = [5, 8, 10, 20, 9];
+// let j = 0;
+// while(j < Liste4.length){
+//     Liste4[j] = Liste4[j] * 0;
+//     j = j + 1;
+// }
+// console.log(Liste4);
+
+// Créer une liste de 6 élements , afficher le premier element, afficher le dernier element
+let Chasse = ["Agouti","Singe","Biche","Rat","Gazelle","Pangolin"];
+console.log(Chasse);
+console.log(Chasse[0]);
+console.log(Chasse[Chasse.length -1]);
+Chasse[3] = "Pigeon"; // changement l'element Rat en Pigeon
+console.log(Chasse);
+
+// Retirer deux elements et ajouter un nouveau element
+Chasse.pop();
+Chasse.pop();
+console.log(Chasse);
+Chasse.push("Phacochère");
+console.log(Chasse);
+
+// afficher chaque element de notre liste
+let c = 0;
+while(c <= Chasse.length-1){
+console.log(Chasse[c]);
+c = c + 1;
 }
-console.log(plusPetit(liste))
+// autre methode
+let a = 0;
+while(!(a >= Chasse.length)){
+console.log(Chasse[a]);
+a = a + 1;
+}
