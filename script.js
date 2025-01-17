@@ -137,37 +137,39 @@
 //  profession2 = "Informaticien";
 
 //  cas des variables objets avec Attribut: sous valeur d'un objet
-// let personne = {
-//   age:37,
-//   nom:"Tanoh",
-//   profession: "Developpeur",
-//   année: 2025
-// };
-//  console.log(personne);
+//  let personne = {
+//    age:37,
+//    nom:"Tanoh",
+//    profession: "Developpeur",
+//    année: 2025
+//  };
+//   console.log(personne);
 
-// let personne1 = {
-//    age:40,
-//    nom:"Romaric",
-//    profession: "Informaticien",
-//    année: 2030
-    //ob: {
-    //     a:"roma",
-    //     b:"ange",
-    //   }
-// };
-// personne1.profession = photographe;
+//  let personne1 = {
+//     age:40,
+//     nom:"Romaric",
+//     profession: "Informaticien",
+//     année: 2030
+//  };
+//  console.log(personne1);
+//     let ob = {
+//          a:"roma",
+//          b:"ange",
+//        };
+
+//  personne1.profession = "photographe";
 //  console.log(personne1.profession);
- // console.log(Personne1.ob.a);
+//  console.log(ob.b);
 
 // cas des variables objets lorsqu'on copie un objet dans un autre
 //  let o1 = {
 //         n:"Roma",
+//   }
+//   let o2 = {
+//         m : "Ange",
+//             ...o1
 //  }
-//  let o2 = {
-//        m : "Ange",
-//            ...o1
-// }
-// console.log(o2);
+//  console.log(o2);
 
 // stockez ces informations en utilisant 3 variables
 
@@ -203,51 +205,54 @@
 
 // cas des listes
  
-// let fruits = [
-//     "Mangue", "Orange", "Ananas","Banane","Papaye","Raisin"
-// ];
+//  let fruits = [
+//      "Mangue", "Orange", "Ananas","Banane","Papaye","Raisin"
+//  ];
 // console.log(fruits);
 // console.log(fruits[1]);
 // console.log(fruits[4]);
 
-// PUSH permet d'ajouter un nouveau element a la liste
-// fruits.push("Pomme");
+// // PUSH permet d'ajouter un nouveau element a la liste
+//  fruits.push("Pomme");
+//  console.log(fruits);
 
-// POP permet de retirer un element de la liste surtout le dernier element et a chaque fois qu'on met un pop ça retire au fur et à mesure.
-// fruits.pop();
-// fruits.pop();
-// fruits.pop();
-// console.log(fruits)
+// // POP permet de retirer un element de la liste surtout le dernier element et a chaque fois qu'on met un pop ça retire au fur et à mesure.
+//  fruits.pop();
+//  fruits.pop();
+//  fruits.pop();
+//  console.log(fruits)
 
-// LENGTH donne la longueur de la liste
+// // LENGTH donne la longueur de la liste
 // console.log(fruits.length);
-
+// //  Afficher une liste d'elements de 0 à 998
 // let liste = [];
-// for (let i = 0; i < 999; i++){
-//     liste.push(i);
-// }
-// console.log(liste);
+//  for (let i = 0; i < 999; i++){
+//      liste.push(i);
+//  }
+//  console.log(liste);
 
-// for (let i = 0; i < liste.length; i++){
-//     console.log(liste[i]) };
+// // Autre Methode
+//  for (let i = 0; i < liste.length; i++){
+//    console.log(liste[i]) };
+
 // Fonction qui dit si un nombre est premier
 
 // function verifierPremier(n){
 //     if(n == 0 || n == 1){
-//         return false;
-//     }
+//          return false;
+//      }
  
-// else{
-//     let i = 2;
-//     while(i < n){
-//         if(n%i == 0){
-//             return false;
-//         }
-//         i = i + 1;
-//     }
-//     return true;
-// }
+//  else{
+//      let i = 2;
+//      while(i < n){
+//          if(n%i == 0){
+//              return false;
+//          }
+//          i = i + 1;
+//      }
+//      return true;
 //  }
+// }
 //  console.log(verifierPremier(10));
 
 //  Trouver tous les nombres premiers entre 0 et 10000.
@@ -381,29 +386,61 @@
 // console.log(Liste4);
 
 // Créer une liste de 6 élements , afficher le premier element, afficher le dernier element
-let Chasse = ["Agouti","Singe","Biche","Rat","Gazelle","Pangolin"];
-console.log(Chasse);
-console.log(Chasse[0]);
-console.log(Chasse[Chasse.length -1]);
-Chasse[3] = "Pigeon"; // changement l'element Rat en Pigeon
-console.log(Chasse);
+// let Chasse = ["Agouti","Singe","Biche","Rat","Gazelle","Pangolin"];
+// console.log(Chasse);
+// console.log(Chasse[0]);
+// console.log(Chasse[Chasse.length -1]);
+// Chasse[3] = "Pigeon"; // changement l'element Rat en Pigeon
+// console.log(Chasse);
 
-// Retirer deux elements et ajouter un nouveau element
-Chasse.pop();
-Chasse.pop();
-console.log(Chasse);
-Chasse.push("Phacochère");
-console.log(Chasse);
+// // Retirer deux elements et ajouter un nouveau element
+// Chasse.pop();
+// Chasse.pop();
+// console.log(Chasse);
+// Chasse.push("Phacochère");
+// console.log(Chasse);
 
-// afficher chaque element de notre liste
-let c = 0;
-while(c <= Chasse.length-1){
-console.log(Chasse[c]);
-c = c + 1;
-}
-// autre methode
-let a = 0;
-while(!(a >= Chasse.length)){
-console.log(Chasse[a]);
-a = a + 1;
-}
+// // afficher chaque element de notre liste
+// let c = 0;
+// while(c <= Chasse.length-1){
+// console.log(Chasse[c]);
+// c = c + 1;
+// }
+// // autre methode pour afficher la listeg
+// let a = 0;
+// while(!(a >= Chasse.length)){
+// console.log(Chasse[a]);
+// a = a + 1;
+// }
+
+// Insérer une fonction dans un objet: les méthodes
+
+let o = {
+    a: 2,
+    b: 4,
+    c: function f(){
+        console.log("c'est moi la fonction");
+    }
+};
+
+o.c();
+console.log(); // affiche l'inscription de la fonction
+console.log(o.c); // affiche la fonction toute entière
+
+let s = "Hello";
+console.log(s.length); // en fonction du type de valeurs il y'a des méthodes rattachées tel que le Length
+console.log(s.toLocaleUpperCase()); // methode pour mettre en majuscule sur un string
+console.log(s.toLowerCase()); // methode pour mettre en miniscule sur un string
+console.log(s.split()); // transforme une chaine de caractere en liste
+console.log(s.split("e")); // il divise la chaine de caractere en plusieurs partie par rapport a l'element selectionné
+
+let y = "je bois de l'eau avec un gobelet";
+console.log(y.split(" "));
+
+
+// l'objet Math
+let b = Math.round(2.9); // arrondi les chiffres
+console.log(b);
+console.log(Math.random());
+console.log(Math.max(1,9,3,5,7));
+console.log(Math.min(1,9,3,5,7));
