@@ -1,175 +1,168 @@
 // FONCTION CONFIRM sert a afficher des reponses de façon booléennes(vrai ou faux)
 //  let reponse = confirm("voulez vous un pain?");
 //  console.log(reponse);
-//  if (reponse == true){
-//  console.log("Bon appetit");
-// }
-// else {
+// if (reponse == true){
+// console.log("Bon appetit");
+//  }
+//  else {
 //     console.log("dommage");
 // }
 // FONCTION PROMPT sert a afficher une barre dans laquelle vous repondez a la question posée
 // let reponse = prompt("Entrez votre pays");
 //  console.log(reponse);
+// if (reponse == "Cote D'ivoire"){
+//     console.log("AKWABA");
+// }
+// else{
+//     console.log("pas le bienvenu");
+// }
 
+// cas avec switch il faut mettre le break afin de bloquer la chaine
+//  let r = prompt("Quelle boisson voulez-vous?");
 
-// let b = 0;
+//  switch(r){
+   
+//    case "Café":
+//          prompt("Combien de sucre voulez-vous?");
+//         break;
+//    case "Soda":
+//         break;
+//    case "Eau":
+//         prompt("La voulez-vous fraiche?");
+//         break;
+//    case "Rien":
+//         prompt("Voulez-vous manger?");
+//         break;
+//  // le default est utilisé lorsque aucun des cas précités ne correspond à la réponse
+//             default:        
+//             alert("Nous n'avons pas ça ici");
+//  }
+
+// // la boucle "WHILE"
+//  let b = 0;
 //  while(b < 3){
 //     console.log("Bonjour");
 //     console.log("Bonjour 2");
 //     console.log("Bonjour 3");
 //     console.log("Bonjour 4");
-//     b = b+1;
+//      b = b+1;
 // }
+
+// Afficher les nombres de 0 à 10 avec la boucle while
 // let b = 0;
-// while(b < 3){
-//     console.log(b);
-//     b = b + 1;
-// }
-// cas ou on prend 100 avec une condition avec le "while"
-// let b = 0;
-// while(b<100){
-//     if(b%2 == 0){
-//         console.log(b);
-//     }
+//  while(b <= 10){
+//      console.log(b);
+//      b = b + 1;
+//  }
+
+// cas ou l'on veut trouver les multiples de 2 qui se trouve entre 0 et 100
+//  let b = 0;
+//  while(b<100){
+//      if(b%2 == 0){
+//          console.log(b);
+//    }
 //     b = b+1;
-// }
-// let r = 23
-// while(r <= 533){
-//     console.log(r);
-//     r = r +1;
-// }
-// cas ou on utilise le "for" il se presente en reduisant le while en une ligne comme ceci
-// for( let i=23; i<534; i = i +1){
+//  }
+
+//   cas ou l'on veut trouver les nombres entre 23 et 533
+//  let r = 23
+//  while(r <= 533){
+//      console.log(r);
+//      r = r +1;
+//  }
+
+// cas ou on utilise la boucle "FOR" il se presente en reduisant le while en une ligne comme ceci
+//  for( let i=23; i<=534; i = i +1){
 //     console.log(i);
+//  }
+
+//  cas ou on veut afficher les multiples de 8 qui se trouve entre 0 et 1000
+
+//  for(let r = 0; r <= 1000; r = r+8){
+//      console.log(r);
 // }
 
-// for( let a = 0; a%8 ==0 && a<1001; a = a+1){
-//     if(a%8 == 0){
-//            console.log(a)
-//     }
-    
-// }
-// for (let i = 0; i <= 1000; i += 8) { 
-//     console.log(i);
-//   }
-//   for (let i = 0; i <= 1000; i++) {
-//    if (i % 8 === 0) {
-//       console.log(i);
-//   }
-//   }
-//   affiche tous les multiples de 8
-// De 0 à 1000
-// for(let r = 0; r <= 1000; r = r+8){
-//     console.log(r);
-// }
+ 
 
-// let r = prompt("Quelle boisson?");
-
-// if(r == "Café"){
-//     prompt("combien de sucre?");
-// }
-// else if(r == "soda"){
-//     prompt("fanta ou coca?");
-// }
-// else if(r == "eau"){
-//     prompt("Fraiche?");
-// }
-// else if(r == "Rien"){
-//     prompt("Voulez-vous mangerCafé?");
-// }
-// cas avec switch il faut mettre le break afin de bloquer la chaine
-// let r = prompt("Quelle boisson voulez-vous?");
-// switch(r){
-//     case "Café":
-//         prompt("Combien de sucre voulez-vous?");
-//         break;
-//     case "Soda":
-//         break;
-//     case "Eau":
-//         prompt("La voulez-vous fraiche?");
-//         break;
-//     case "Rien":
-//         prompt("Voulez-vous manger?");
-//         break;
-//         // le default est utilisé lorsque aucun des cas précités ne correspond à la réponse
-//             default:        
-//             alert("Nous n'avons pas ça ici");
-// }
 // cas des fonctions 
 // declaration
 
-// function addition(x,y){
+//  function addition(x,y){
 //     let resultat = x+y;
 //     return resultat;
 // }
-// // Appel
-// let r = addition(2,3);
-// console.log(r);
+// // // Appel
+//  let r = addition(2,3);
+//  console.log(r);
 
-// console.log(addition(7,5));
+//  console.log(addition(7,5));
     
-// // Fonction trouve nombre le plus grand
-// function plusGrand(a,b){
+// // // Fonction trouve nombre le plus grand
+//  function plusGrand(a,b){
 //     if(a > b){
-//         return a;
-//     }
-//     else{return b}
-// }
-// console.log(plusGrand(-20, -5));
-// // fonction comme une variable
+//          return a;
+//       }
+//      else{return b}
+//  }
+// // console.log(plusGrand(-20, -5));
+
+// // // fonction comme une variable
 // let f = plusGrand;
-// console.log(f(8,2));
+//  console.log(f(8,2));
 
 // Creation de 4 variables
 
-//  let age = 37;
-//  let nom = "Tanoh";
-//  let année = 2025;
-//  let profession = "Developpeur";
+//   let age = 37;
+//   let nom = "Tanoh";
+//   let année = 2025;
+//   let profession = "Developpeur";
 
-//  let age2;
-//  age2 = 43;
-//  let nom2;
-//  nom2 = "Romaric";
-//  let année2;
-//  année2 = 2030;
-//  let profession2;
-//  profession2 = "Informaticien";
+//   let age2;
+//   age2 = 43;
+//   let nom2;
+//   nom2 = "Romaric";
+//   let année2;
+//   année2 = 2030;
+//   let profession2;
+//   profession2 = "Informaticien";
 
 //  cas des variables objets avec Attribut: sous valeur d'un objet
-//  let personne = {
-//    age:37,
-//    nom:"Tanoh",
-//    profession: "Developpeur",
-//    année: 2025
-//  };
+
+//   let personne = {
+//     age:37,
+//     nom:"Tanoh",
+//     profession: "Developpeur",
+//     année: 2025
+//   };
+
 //   console.log(personne);
 
-//  let personne1 = {
+//   let personne1 = {
 //     age:40,
 //     nom:"Romaric",
 //     profession: "Informaticien",
 //     année: 2030
 //  };
-//  console.log(personne1);
-//     let ob = {
+//   console.log(personne1);
+//   personne1.profession = "photographe";
+//   console.log(personne1.profession);
+    
+//   let ob = {
 //          a:"roma",
 //          b:"ange",
-//        };
-
-//  personne1.profession = "photographe";
-//  console.log(personne1.profession);
-//  console.log(ob.b);
+//       };
+//   console.log(ob);
+//   console.log(ob.a);
 
 // cas des variables objets lorsqu'on copie un objet dans un autre
 //  let o1 = {
-//         n:"Roma",
+//        n:"Roma",
 //   }
-//   let o2 = {
+//    let o2 = {
 //         m : "Ange",
-//             ...o1
+//              ...o1
 //  }
-//  console.log(o2);
+//   console.log(o2);
 
 // stockez ces informations en utilisant 3 variables
 
@@ -186,74 +179,113 @@
 // let classe2 = "Terminale";
 
 // let élève = {
-//     nom : "koffi",
-//     prenom : "kouakou",
-//     classe : "1éreD"
-//  };
+//      nom : "koffi",
+//      prenom : "kouakou",
+//      classe : "1èreD"
+//   };
+// console.log(élève);
+// console.log(élève.nom);
+// console.log(élève.classe);
 
 // let élève1 = {
-//     nom : "kouakou",
-//     prenom : "kouadio",
-//     classe : "3ème"
-//  };
+//      nom : "kouakou",
+//      prenom : "kouadio",
+//      classe : "3ème"
+//   };
+// console.log(élève1);
 
-//  let élève2 = {
-//    nom : "kouame",
-//    prenom : "kouassi",
-//    classe : "Terminale"
-//  };
+//   let élève2 = {
+//     nom : "kouame",
+//     prenom : "kouassi",
+//     classe : "Terminale"
+//   };
+// console.log(élève2);
 
 // cas des listes
  
 //  let fruits = [
 //      "Mangue", "Orange", "Ananas","Banane","Papaye","Raisin"
-//  ];
-// console.log(fruits);
-// console.log(fruits[1]);
-// console.log(fruits[4]);
-
-// // PUSH permet d'ajouter un nouveau element a la liste
-//  fruits.push("Pomme");
+//   ];
 //  console.log(fruits);
+//  console.log(fruits[0]);
+//  console.log(fruits[1]);
+//  console.log(fruits[2]);
+//  console.log(fruits[3]);
+//  console.log(fruits[4]);
+//  console.log(fruits[5]);
+
+ // PUSH permet d'ajouter un nouveau element a la liste
+//   fruits.push("Pomme");
+//   console.log(fruits);
 
 // // POP permet de retirer un element de la liste surtout le dernier element et a chaque fois qu'on met un pop ça retire au fur et à mesure.
-//  fruits.pop();
-//  fruits.pop();
-//  fruits.pop();
-//  console.log(fruits)
+//   fruits.pop();
+//   fruits.pop();
+//   fruits.pop();
+//   console.log(fruits)
 
-// // LENGTH donne la longueur de la liste
-// console.log(fruits.length);
-// //  Afficher une liste d'elements de 0 à 998
-// let liste = [];
-//  for (let i = 0; i < 999; i++){
-//      liste.push(i);
-//  }
-//  console.log(liste);
+// LENGTH donne la longueur de la liste
+//  console.log(fruits.length);
 
-// // Autre Methode
-//  for (let i = 0; i < liste.length; i++){
-//    console.log(liste[i]) };
+//  Afficher une liste d'elements de 0 à 998
+//     let liste = [];
+//     for (let i = 0; i < 999; i=i+1){
+//     liste.push(i);
+//   }
+//   console.log(liste);
+
+//  Autre Methode
+//  let Liste = [0,1,2,3,4,9,7,3];
+//   for (let x = 0; x < Liste.length; x=x+1){
+//     console.log(Liste[x]);
+//   }
+  
 
 // Fonction qui dit si un nombre est premier
 
-// function verifierPremier(n){
-//     if(n == 0 || n == 1){
-//          return false;
-//      }
+//  function verifierPremier(n){
+//      if(n == 0 || n == 1){
+//           return false;
+//       }
  
+//   else{
+//       let i = 2;
+//       while(i < n){
+//           if(n%i == 0){
+//               return false;
+//           }
+//           i = i + 1;
+//       }
+//       return true;
+//   }
+//  }
+//    console.log(verifierPremier(10));
+
+// cas avec le FOR les nombres premiers entre 0 et 1000.
+
+//  function estPremier(n){
+//  if(n == 0 || n == 1){
+//      return false
+//  }
 //  else{
-//      let i = 2;
-//      while(i < n){
+//     for(let i = 2; i <= n-1; i++){
 //          if(n%i == 0){
-//              return false;
+//              return false
 //          }
-//          i = i + 1;
 //      }
 //      return true;
 //  }
-// }
-//  console.log(verifierPremier(10));
+//  }
+//  for(let i =1; i < 1000; i = i+1){
+//     let r = estPremier(i);
+//     if(r == true){
+//         console.log(i + " est premier")
+//     }
+//     else {
+//         console.log(i + " n'est pas premier")
+//     }
+//  }
+
 
 //  Trouver tous les nombres premiers entre 0 et 10000.
 // for(a = 0; a < 10000; a = a +1){
@@ -415,32 +447,143 @@
 
 // Insérer une fonction dans un objet: les méthodes
 
-let o = {
-    a: 2,
-    b: 4,
-    c: function f(){
-        console.log("c'est moi la fonction");
-    }
-};
+// let o = {
+//     a: 2,
+//     b: 4,
+//     c: function f(){
+//         console.log("c'est moi la fonction");
+//     }
+// };
 
-o.c();
-console.log(); // affiche l'inscription de la fonction
-console.log(o.c); // affiche la fonction toute entière
+// o.c();
+// console.log(); // affiche l'inscription de la fonction
+// console.log(o.c); // affiche la fonction toute entière
 
-let s = "Hello";
-console.log(s.length); // en fonction du type de valeurs il y'a des méthodes rattachées tel que le Length
-console.log(s.toLocaleUpperCase()); // methode pour mettre en majuscule sur un string
-console.log(s.toLowerCase()); // methode pour mettre en miniscule sur un string
-console.log(s.split()); // transforme une chaine de caractere en liste
-console.log(s.split("e")); // il divise la chaine de caractere en plusieurs partie par rapport a l'element selectionné
+// let s = "Hello";
+// console.log(s.length); // en fonction du type de valeurs il y'a des méthodes rattachées tel que le Length
+// console.log(s.toLocaleUpperCase()); // methode pour mettre en majuscule sur un string
+// console.log(s.toLowerCase()); // methode pour mettre en miniscule sur un string
+// console.log(s.split()); // transforme une chaine de caractere en liste
+// console.log(s.split("e")); // il divise la chaine de caractere en plusieurs partie par rapport a l'element selectionné
 
-let y = "je bois de l'eau avec un gobelet";
-console.log(y.split(" "));
+// let y = "je bois de l'eau avec un gobelet";
+// console.log(y.split(" "));
 
 
-// l'objet Math
-let b = Math.round(2.9); // arrondi les chiffres
-console.log(b);
-console.log(Math.random());
-console.log(Math.max(1,9,3,5,7));
-console.log(Math.min(1,9,3,5,7));
+// // l'objet Math
+// let b = Math.round(2.9); // arrondi les chiffres
+// console.log(b);
+// console.log(Math.random()); // affiche un nombre au hasard
+// console.log(Math.max(1,9,3,5,7)); // affiche le plus grand nombre dans une liste
+// console.log(Math.min(1,9,3,5,7)); // affiche le plus petit nombre dans une liste
+
+// Exercices
+// function addition(x,y){
+//     let resultat = x+y;
+//     return x+y;
+    //on aurait pu ecrire directement return a+b sans mettre le let resultat
+// }
+// let r = addition(5,2);
+// console.log(r);
+
+// function afficher5foisBonjour(){
+//    for(let i = 0; i < 5; i =i+1 ){
+//     console.log("bonjour");
+//    }
+// }
+// afficher5foisBonjour();
+
+// let liste = [1, "foutou", 5, false];
+// console.log(liste[0]);
+// console.log(liste[1]);
+// console.log(liste[2]);
+// console.log(liste[3]);
+
+// methode plus simple
+// for(let i = 0; i <= 3; i++){
+//     console.log(liste[i]);
+// }
+// on aurait pu remplacer le "3" par (liste.length - 1)
+// for(let m = 0; m <= liste.length - 1; m++){
+//     console.log(liste[m]);
+// }
+
+// let liste = [1,3, 5,7,9,15];
+// faire la somme
+// let somme = 0;
+// for(let i = 0; i <= liste.length - 1; i++){
+//     somme = somme + liste[i];
+// }
+// console.log(somme);
+
+// let i = 5;
+// console.log(`Le nombre est ${i}`)// associer des chaines de caractère
+
+// console.log(typeof(true)); // sert a donner le type de la valeur
+// console.log(typeof(5));
+// console.log(typeof("voiture"));
+// console.log(typeof({}));
+// console.log(typeof([]));
+// console.log(typeof(`ABC ${i}`));
+
+// let a = "Hello";
+// console.log(typeof a);
+// if(typeof a == "number"){
+//     console.log("c'est un nombre")
+// }
+// else{
+//     console.log("c'est pas un nombre")
+// }
+
+// let b = [2,3,4,5,6];
+// console.log(typeof b);
+// if(typeof b == "number"){
+//     console.log("c'est un nombre")
+// }
+// else{
+//     console.log("c'est pas un nombre")
+// }
+
+// let c = [2,3,4,5,6];
+// console.log(Array.isArray(c)); // permet de verifier le type d'une liste
+
+// let d = [ a, a]
+
+// console.log(Array.isArray(d));
+
+// let type = typeof d;
+
+// if(type == "string"){
+//     console.log("chaine de caractère");
+// }
+// else if(type == "number"){
+//     console.log("nombre");
+// }
+// else if(type == "boolean"){
+//     console.log("Boolean");
+// }
+// else if(type == "object"){
+//     if(Array.isArray(d) == false){
+//         console.log("Objet");
+//     }
+//     else(
+//         console.log("liste")
+//     )
+// }
+
+let l2 = ["abc", "def", "ghi"];
+// for( let i = 0; i < l2.length; i++){
+//     console.log(l2[i]);
+// }
+
+// "FOR IN" : parcours les clés de la liste
+
+for(let i in l2){
+    console.log(l2[i]);
+}
+
+// "FOR OF" : donne les differentes valeurs de la liste
+
+for(let j of l2){
+    console.log(j);
+}
