@@ -571,19 +571,123 @@
 //     )
 // }
 
-let l2 = ["abc", "def", "ghi"];
+// LES BOUCLES FOR IN ET FOR OF
+
+// let l2 = ["abc", "def", "ghi"];
 // for( let i = 0; i < l2.length; i++){
 //     console.log(l2[i]);
 // }
 
 // "FOR IN" : parcours les clés de la liste
 
-for(let i in l2){
-    console.log(l2[i]);
-}
+// for(let i in l2){
+//     console.log(l2[i]);
+// }
 
 // "FOR OF" : donne les differentes valeurs de la liste
 
-for(let j of l2){
-    console.log(j);
+// for(let j of l2){
+//     console.log(j);
+// }
+
+// 
+
+// let nums = [];
+// function sumOfCubes(nums) {
+// 	let sumOfCubes = 0;
+// 	for(let i=0; i< nums.length; i = i+1 ){
+// 		sumOfCubes += nums[i]*nums[i]*nums[i];
+// 	}
+//     return sumOfCubes;
+// }
+
+// let a = sumOfCubes([3,2]);
+// console.log(a);
+
+// function minMax(arr) {
+// 	let minimum = arr[0];
+// 	let maximum = arr[0];
+// 	for(let i =0; i < arr.length; i = i+1){
+// 		if(arr[i] < minimum ){
+// 			minimum = arr[i];
+// 		}
+//         else if(arr[i] > maximum){
+//             maximum = arr[i];
+//         }
+// 	}
+// 	return [minimum,maximum];
+// }
+
+// let b = minMax([2,9,6,7,15]);
+// console.log(b);
+
+// function filterArray(arr){
+//      let b = [];
+//      for(let i = 0; i < arr.length; i++){
+//         if (typeof arr[i] == typeof 0){
+//             console.log(arr[i]);
+//              b.push(arr[i]);
+//         }
+
+//      }
+//      return b;
+// }
+// console.log(filterArray(["1",2,"bob",7]));
+
+// function isSymmetrical(num) {
+// 	let number = num.toString();
+// 	if( number === number.split('').reverse().join('')){
+// 		return true;
+// 	}
+// 	else{return false}
+// }
+// console.log(isSymmetrical(565));
+
+// function isSpecialArray(arr) {
+//     for(let a = 0; a < arr.length; a++){
+//         if(a%2 === 0 && arr[a]%2 !== 0){
+//              return false;
+//         }
+//         if(a%2 !== 0 && arr[a]%2 === 0){
+//             return false;
+//         }
+//     }
+// 	return true;
+// }
+// console.log(isSpecialArray([2,7,9,1,6,6,3]));
+
+// Ecris une fonction javascript nomée dollarVersFCFA qui convertit une somme d'argent du DOLLAR vers le FCFA 1 DOLLAR = 630 FCFA
+
+// function dollarVersFCFA(argent){
+//     let resultat = argent * 630;
+//     return resultat;
+// }
+// console.log(dollarVersFCFA(10));
+
+// Ecris une fonction javascript qui vérifie s'il y a au moins deux nombres dans une liste
+
+function verifier(liste){
+    let compt = 0;
+    for(let j =0; j < liste.length; j++){
+        if(typeof liste[j] == "number"){
+            compt = compt + 1
+        }
+        if(compt>=2){
+            return true
+        }
+    }
+    return false;
 }
+console.log(verifier([1,2,"mais","pistolet",100]));
+
+// deuxieme methode FOR OF
+// let compt = 0;
+//     for(let j of liste){
+//         if(typeof j == "number"){
+//             compt = compt + 1
+//         }
+//         if(compt>=2){
+//             return true
+//         }
+//     }
+//     return false;
