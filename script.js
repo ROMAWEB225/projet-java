@@ -656,7 +656,41 @@
 // }
 // console.log(isSpecialArray([2,7,9,1,6,6,3]));
 
-// Ecris une fonction javascript nomée dollarVersFCFA qui convertit une somme d'argent du DOLLAR vers le FCFA 1 DOLLAR = 630 FCFA
+
+// function compterTrue(tab) {
+//     return tab.filter(element => element === true).length;
+// }
+// console.log(compterTrue([true,true,true ,false,true]));
+
+
+// function objectToARRAY(obj) {
+//     return Object.entries(obj);
+// }
+
+// function arrayOfMultiples(num, length) {
+//     let result = [];
+//     for (let i = 1; i <= length; i++) {
+//         result.push(num * i);
+//     }
+//     return result;
+// }
+// console.log(arrayOfMultiples(7,5));
+
+// function verifierMarathon(d) {
+  
+//     if (!d || d.length === 0) {
+//         return false;
+//     }
+
+//     // Convertir les éléments négatifs en positifs et calculer la somme
+//     const total = d.reduce((acc, d) => acc + Math.abs(d), 0);
+
+//     // Vérifier si la somme est égale à 25
+//     return total === 25;
+// }
+// console.log(verifierMarathon([-6,15,4]));
+
+// Ecris une fonction javascript nommée dollarVersFCFA qui convertit une somme d'argent du DOLLAR vers le FCFA 1 DOLLAR = 630 FCFA
 
 // function dollarVersFCFA(argent){
 //     let resultat = argent * 630;
@@ -666,19 +700,19 @@
 
 // Ecris une fonction javascript qui vérifie s'il y a au moins deux nombres dans une liste
 
-function verifier(liste){
-    let compt = 0;
-    for(let j =0; j < liste.length; j++){
-        if(typeof liste[j] == "number"){
-            compt = compt + 1
-        }
-        if(compt>=2){
-            return true
-        }
-    }
-    return false;
-}
-console.log(verifier([1,2,"mais","pistolet",100]));
+// function verifier(liste){
+//     let compt = 0;
+//     for(let j =0; j < liste.length; j++){
+//         if(typeof liste[j] == "number"){
+//             compt = compt + 1
+//         }
+//         if(compt>=2){
+//             return true
+//         }
+//     }
+//     return false;
+// }
+// console.log(verifier([1,2,"mais","pistolet",100]));
 
 // deuxieme methode FOR OF
 // let compt = 0;
@@ -691,3 +725,73 @@ console.log(verifier([1,2,"mais","pistolet",100]));
 //         }
 //     }
 //     return false;
+
+// fonction addition
+
+// function addition (x,y){
+//     return x+y;
+// }
+// console.log(addition(5,6));
+
+// autres methodes d'afficher une fonction comme une variable
+// const addition = (x,y) => {
+//     return x+y;
+// }
+// console.log(addition(5,6));
+
+// const afficherBonjour = () => {
+//     console.log("BONJOUR");
+// }
+
+// setTimeout(() => {
+//     console.log("BONJOUR");
+// }, 2000);
+
+// setInterval(() => {
+//     console.log("BBBONJOUR");
+// }, 1000);
+
+// const multiplication = (a,b) => {
+//     return a*b;
+// }
+
+// function garderOuPas(element){
+//     if(element == 2){
+//         return false;
+//     }
+//     else{
+//         return true;
+//     }
+// }
+// let L = [2,4,4,6,2,"2",2];
+// let L2 = L.filter(garderOuPas);
+// console.log(L2);
+
+// autre ecriture
+// function garderOuPas(element){
+//     return !(element == 2); // utlise cette methode lorsqu'on a un if return false et un else return true
+// }
+// let L = [2,4,4,6,2,"2",2];
+// let L2 = L.filter(garderOuPas);
+// console.log(L2);
+
+//  methode fleché
+// const garderOuPas = ((element) => {
+//     return !(element == 2);    // pas besoin d'ecrire cette partie, on peut passer directement a l'ecriture suivante
+
+// });
+
+// let L = [2,4,4,6,2,"2",2];
+// let L2 = L.filter((element) => {
+//     return !(element == 2);
+// });
+// console.log(L2);
+
+const l = ["abc",true,"2",3,4];
+function verifNombre(l){
+    const l2 = l.filter((e) => {
+        return (typeof e == "number");
+    });
+    return (l2.length >= 2);
+}
+console.log(verifNombre(l));
