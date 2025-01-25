@@ -590,7 +590,12 @@
 //     console.log(j);
 // }
 
-// 
+// CHECK POINT JAVASCRIPT 
+
+// Créez une fonction qui prend un tableau de nombres et 
+// renvoie la somme de ses cubes.
+// Notes
+// Si on vous donne un tableau vide, renvoyez .0
 
 // let nums = [];
 // function sumOfCubes(nums) {
@@ -600,9 +605,13 @@
 // 	}
 //     return sumOfCubes;
 // }
-
 // let a = sumOfCubes([3,2]);
 // console.log(a);
+
+// Créez une fonction qui prend un tableau de nombres et 
+// renvoie les nombres minimum et maximum, dans cet ordre.
+// Notes:
+// Tous les réseaux de test comporteront au moins un élément et seront valides.
 
 // function minMax(arr) {
 // 	let minimum = arr[0];
@@ -617,9 +626,16 @@
 // 	}
 // 	return [minimum,maximum];
 // }
-
 // let b = minMax([2,9,6,7,15]);
 // console.log(b);
+
+// Créez une fonction qui prend un tableau d’entiers non négatifs et 
+// de chaînes et renvoie un nouveau tableau sans les chaînes.
+// Notes
+// Zéro est un entier non négatif.
+// Le tableau donné ne contient que des entiers et des chaînes.
+// Les nombres du tableau ne doivent pas se répéter.
+// L’ordre initial doit être maintenu.
 
 // function filterArray(arr){
 //      let b = [];
@@ -634,6 +650,12 @@
 // }
 // console.log(filterArray(["1",2,"bob",7]));
 
+// Créez une fonction qui prend un nombre comme argument et 
+// renvoie ou selon que le nombre est symétrique ou non. 
+// Un nombre est symétrique lorsqu’il est le même que son inverse.truefalse
+// Notes
+// N/A
+
 // function isSymmetrical(num) {
 // 	let number = num.toString();
 // 	if( number === number.split('').reverse().join('')){
@@ -642,6 +664,12 @@
 // 	else{return false}
 // }
 // console.log(isSymmetrical(565));
+
+// Un tableau est spécial si chaque indice pair contient un nombre pair et 
+// chaque indice impair contient un nombre impair. 
+// Créez une fonction qui renvoie si un tableau est spécial, et sinon.truefalse
+// Notes
+// N/A
 
 // function isSpecialArray(arr) {
 //     for(let a = 0; a < arr.length; a++){
@@ -656,16 +684,29 @@
 // }
 // console.log(isSpecialArray([2,7,9,1,6,6,3]));
 
+// Créez une fonction qui renvoie le nombre de valeurs qu’il y a dans un tableau.true
+// Notes
+// Retourne si on lui donne un tableau vide.0
+// Tous les éléments du tableau sont de type bool ( ou ).truefalse
 
 // function compterTrue(tab) {
 //     return tab.filter(element => element === true).length;
 // }
 // console.log(compterTrue([true,true,true ,false,true]));
 
+// Écrivez une fonction qui convertit un objet en un tableau de clés et de valeurs.
+// Notes
+// N/A
 
 // function objectToARRAY(obj) {
 //     return Object.entries(obj);
 // }
+
+// Créez une fonction qui prend deux nombres comme arguments (, ) et 
+// renvoie un tableau de multiples de jusqu’à ce que la longueur du tableau atteigne 
+// .numlengthnumlength
+// Notes
+// Notez que est également inclus dans le tableau renvoyé.num
 
 // function arrayOfMultiples(num, length) {
 //     let result = [];
@@ -676,8 +717,23 @@
 // }
 // console.log(arrayOfMultiples(7,5));
 
-// function verifierMarathon(d) {
-  
+// Mary veut courir un marathon de 25 miles. 
+// Lorsqu’elle tente de s’inscrire au marathon, 
+// elle remarque que la feuille d’inscription n’indique pas directement 
+// la durée du marathon. 
+// Au lieu de cela, la longueur du marathon 
+// est indiquée en petites portions différentes. 
+// Aidez Marie à découvrir la durée réelle du marathon.
+// Retour si le marathon fait 25 milles, sinon, retour.truefalse
+
+// Notes
+// Les éléments du tableau seront toujours des entiers.
+// Les éléments du tableau peuvent être négatifs ou positifs,
+//  mais comme une distance négative n’est pas possible,
+// trouvez un moyen de convertir des entiers négatifs en entiers positifs.
+// Retournez si les arguments sont vides ou non fournis.false
+
+// function verifierMarathon(d) { 
 //     if (!d || d.length === 0) {
 //         return false;
 //     }
@@ -689,6 +745,36 @@
 //     return total === 25;
 // }
 // console.log(verifierMarathon([-6,15,4]));
+
+// Créez une fonction qui met au carré chaque chiffre d’un nombre.
+// Notes
+// La fonction reçoit un entier et doit renvoyer un entier.
+
+// function squareDigits(n) {
+    // Vérifier que l'entrée est un entier
+//     if (!Number.isInteger(n)) {
+//       return false;
+//     }
+  
+//     // Transformer le nombre en chaîne, mettre au carré chaque chiffre,
+//  puis reformer un entier
+//     let result = parseInt(
+//       n
+//         .toString()
+//         .split('') // Découper chaque chiffre
+//         .map(digit => Math.pow(parseInt(digit), 2)) // Mettre au carré
+//         .join(''), // Réassembler
+//       10 // Base 10
+//     );
+  
+//     return result;
+//   }
+//   console.log(squareDigits(2483));
+
+// FIN CHECK POINT JAVASCRIPT
+
+
+
 
 // Ecris une fonction javascript nommée dollarVersFCFA qui convertit une somme d'argent du DOLLAR vers le FCFA 1 DOLLAR = 630 FCFA
 
@@ -787,11 +873,13 @@
 // });
 // console.log(L2);
 
-const l = ["abc",true,"2",3,4];
-function verifNombre(l){
-    const l2 = l.filter((e) => {
-        return (typeof e == "number");
-    });
-    return (l2.length >= 2);
-}
-console.log(verifNombre(l));
+// Une fonction qui verifie si on n'a au moins deux nombres dans une liste
+// const l = ["abc",true,"2",3,4];
+// function verifNombre(l){
+//     const l2 = l.filter((e) => {
+//         return (typeof e == "number");
+//     });
+//     return (l2.length >= 2);
+// }
+// console.log(verifNombre(l));
+
